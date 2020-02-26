@@ -1,13 +1,14 @@
-﻿
-Option Strict On
+﻿Option Strict On
 
 ''' <summary>
-''' Author Name:    Alfred Massardo
-''' Project Name:   CustomerList
-''' Date:           05-Jan-2018
-''' Description     Application to keep a list of customers and a little information that describes their importance.
+''' Original Author:    Alfred Massardo
+''' Original Date:      05-Jan-2018
+''' Last Modified By:   Kyle Chapman
+''' Last Modified Date: Feb 26, 2020
+''' Project Name:       CustomerList
+''' Description:
+'''     Application to keep a list of customers and a little information that describes their importance.
 ''' </summary>
-
 Public Class frmCustomerList
 
     Private customerList As New SortedList                                 ' collection of all the customerList in the list
@@ -134,7 +135,6 @@ Public Class frmCustomerList
     ''' Reset - set the controls back to their default state.
     ''' </summary>
     Private Sub Reset()
-
 
         tbFirstName.Text = String.Empty
         tbLastName.Text = String.Empty

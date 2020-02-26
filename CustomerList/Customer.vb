@@ -1,4 +1,14 @@
 ﻿Option Strict On
+
+''' <summary>
+''' Original Author:    Alfred Massardo
+''' Original Date:      05-Jan-2018
+''' Last Modified By:   Kyle Chapman
+''' Last Modified Date: Feb 26, 2020
+''' Project Name:       CustomerList
+''' Description:
+'''     A class designed to as a record of an individual customer, including a little information that describes their importance.
+''' </summary>
 Public Class Customer
 
 
