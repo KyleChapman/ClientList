@@ -11,7 +11,7 @@
 ''' </summary>
 Public Class frmCustomerList
 
-    Private customerList As New SortedList                                 ' collection of all the customerList in the list
+    Private customerList As New SortedList                                 ' collection of all the customers in the list
     Private currentCustomerIdentificationNumber As String = String.Empty ' current selected customer identification number
     Private editMode As Boolean = False                                 '
 
@@ -37,8 +37,8 @@ Public Class frmCustomerList
             ' set the edit flag to true
             editMode = True
 
-            ' 
-            lbResult.Text = "It worked!"
+            ' Indicate that the entry is successful
+            lbResult.Text = "Entry successful!"
 
             ' if the current customer identification number has a no value
             ' then this is not an existing item from the listview
@@ -273,7 +273,6 @@ Public Class frmCustomerList
         chkVIP.Checked = customer.VeryImportantPersonStatus ' get the very important person status and set the combo box
 
         lbResult.Text = customer.GetSalutation()
-
 
     End Sub
 

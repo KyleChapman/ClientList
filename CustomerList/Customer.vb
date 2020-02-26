@@ -11,13 +11,12 @@
 ''' </summary>
 Public Class Customer
 
-
     Private Shared customerCount As Integer                 ' static or shared private variable to hold the number of customers
     Private customerIdentificationNumber As Integer = 0     ' private variable to hold the customer's identification number
-    Private customertTitle As String = String.Empty         ' private variable to hold the customer's title
-    Private customertFirstName As String = String.Empty     ' private variable to hold the customer's first name
-    Private customertLastName As String = String.Empty      ' private variable to hold the customer's last name
-    Private customertVeryImportantPersonStatus As Boolean = False              ' private variable to hold the customer's status
+    Private customerTitle As String = String.Empty         ' private variable to hold the customer's title
+    Private customerFirstName As String = String.Empty     ' private variable to hold the customer's first name
+    Private customerLastName As String = String.Empty      ' private variable to hold the customer's last name
+    Private customerVeryImportantPersonStatus As Boolean = False              ' private variable to hold the customer's status
 
     ''' <summary>
     ''' Constructor - Default - creates a new customer object
@@ -43,14 +42,12 @@ Public Class Customer
         ' to set the customer id
         Me.New()
 
-
-        customertTitle = title          ' set the customer title
-        customertFirstName = firstName  ' set the customer first name
-        customertLastName = lastName    ' set the customer last name
-        customertVeryImportantPersonStatus = veryImportantPersonStatus        ' set the customer status
+        customerTitle = title          ' set the customer title
+        customerFirstName = firstName  ' set the customer first name
+        customerLastName = lastName    ' set the customer last name
+        customerVeryImportantPersonStatus = veryImportantPersonStatus        ' set the customer status
 
     End Sub
-
 
     ''' <summary>
     ''' Count ReadOnly Property - Gets the number of customers that have been instantiated/created
@@ -78,10 +75,10 @@ Public Class Customer
     ''' <returns>Boolean</returns>
     Public Property VeryImportantPersonStatus() As Boolean
         Get
-            Return customertVeryImportantPersonStatus
+            Return customerVeryImportantPersonStatus
         End Get
         Set(ByVal value As Boolean)
-            customertVeryImportantPersonStatus = value
+            customerVeryImportantPersonStatus = value
         End Set
     End Property
 
@@ -91,10 +88,10 @@ Public Class Customer
     ''' <returns>String</returns>
     Public Property Title() As String
         Get
-            Return customertTitle
+            Return customerTitle
         End Get
         Set(ByVal value As String)
-            customertTitle = value
+            customerTitle = value
         End Set
     End Property
 
@@ -104,10 +101,10 @@ Public Class Customer
     ''' <returns>String</returns>
     Public Property FirstName() As String
         Get
-            Return customertFirstName
+            Return customerFirstName
         End Get
         Set(ByVal value As String)
-            customertFirstName = value
+            customerFirstName = value
         End Set
     End Property
 
@@ -117,10 +114,10 @@ Public Class Customer
     ''' <returns>String</returns>
     Public Property LastName() As String
         Get
-            Return customertLastName
+            Return customerLastName
         End Get
         Set(ByVal value As String)
-            customertLastName = value
+            customerLastName = value
         End Set
     End Property
 
@@ -130,9 +127,8 @@ Public Class Customer
     ''' <returns>String</returns>
     Public Function GetSalutation() As String
 
-        Return "Hi my name is " & customertTitle & " " & customertFirstName & " " & customertLastName & ", " & IIf(customertVeryImportantPersonStatus = True, "I am a VIP", "I am not a VIP").ToString()
+        Return "Hi my name is " & customerTitle & " " & customerFirstName & " " & customerLastName & ", " & IIf(customerVeryImportantPersonStatus = True, "I am a VIP", "I am not a VIP").ToString()
 
     End Function
-
 
 End Class
